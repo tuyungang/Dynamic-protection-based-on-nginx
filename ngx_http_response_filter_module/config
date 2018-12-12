@@ -1,0 +1,10 @@
+ngx_addon_name=ngx_http_myfilter_module
+
+HTTP_AUX_FILTER_MODULES="$HTTP_AUX_FILTER_MODULES ngx_http_myfilter_module"
+
+NGX_ADDON_SRCS="$NGX_ADDON_SRCS $ngx_addon_dir/ngx_http_response_myfilter_module.c"
+
+NGX_ADDON_DEPS="$NGX_ADDON_DEPS $ngx_addon_dir/TBase64_code.h"
+
+CORE_LIBS="$CORE_LIBS "
+CORE_INCS="$CORE_INCS "
